@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoio ao cliente - IT.POWERON</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="fotos/favicon.png">
+</head>
+<body style="font-size: 18px;">
+  <nav class="navbar">
+    <div class="logo"><img style="width: 200px;height: 50px;margin-top: 10px;margin-left: 10px;" src="fotos/ITPOWERON.JPG"/></div>
+        <ul class="nav-links">
+        <div class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quemsomos.html">Quem somos</a></li>
+        <li class="services">
+        <a href="">Soluções</a>
+        <ul class="dropdown" style="z-index: 1;">
+        <li><a href="">Software Sage</a></li>
+        <li><a href="">Sysdev MSS</a></li>
+        <li><a href="">Servidores Fujitsu</a></li>
+        <li><a href="">Cibersegurança</a></li>
+        <li><a href="">Panda Antivirus</a></li>
+        </ul>
+        </li>
+        <li><a href="serviços.html">Serviços</a></li>
+        <li><a href="apoio.html">Apoio ao cliente</a></li>
+        <li><a href="informacao.html">Informações</a></li>
+        <li><button id="button1" class="button1" style="border-radius: 20px;font-family: cursive;font-size: 18px;padding: 5px;margin-top: -10px;background-color: #5aad06;color: white;">Assistência Técnica</button></li>
+    </div>
+        </ul>
+</nav>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 align="center">Como contactar-nos em caso de pedido de suporte<br></h2><br> 
+    <p>Para fazer o seu pedido de suporte poderá contactar-nos pelo email suporte@itpoweron.pt ou pelo número de telefone 265 092 387.<br>O nosso horário de suporte é de segunda a sexta (exceto feriados) das 9:00 às 13:00 e das 14:30 às 18:30.</p>
+  </div>
+</div>  
+<style>
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }</style>
+
+<script>
+  var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("button1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<br>
+<div style="width: 100%; height: 100%;" align="center">
+    <div style="background-color:rgba(248, 239, 158, 0.705);width: 85%;border-left: 20px;border-right: 20px;" align="center">
+        <h1>Prioridades no suporte</h1>
+        <p>Para melhorar a atuação, junto dos seus clientes a <b>IT.POWERON - Sistemas de Informação, Lda.</b> criou um serviço rápido de resposta, às incidências reportadas via telefone estabelecendo como ordem de prioridade de atendimento as seguintes situações:</p><br>
+        <p>1- Clientes com contrato Poweron.total, Poweron.soft e Sage Care Ativo</p>
+        <p>2- Clientes com contrato Sage Care Ativo e sem contrato Poweron</p>
+        <p>3- Clientes sem contrato Sage Care Ativo e sem contrato Poweron</p><br>
+    </div>
+</div>
+<br>
+<div style="width: 100%; height: 100%;" align="center">
+    <div style="background-color:rgba(248, 239, 158, 0.705);width: 85%;border-left: 20px;border-right: 20px;" align="center">
+        <h1>Metodologia operacional</h1>
+        <h3>Registo do pedido</h3>
+        <p>a) Após contacto telefónico, presencial ou e-mail é preenchido uma Folha de Incidência que identifique a anomalia e o cliente;<br>
+            b) A Folha de Incidência, devidamente preenchida é enviada por e-mail ao cliente e comunicada interna-mente ao Suporte Técnico;</p>
+        <br>
+        <h3>Análise do pedido</h3>
+        <p>c) O pedido entra no Sistema, é analisado e direccionado para um dos nossos técnicos;</p>
+        <br>
+        <h3>Agendamento do pedido</h3>
+        <p>d) O agendamento da intervenção é realizado tendo em conta a urgência, a ordem de entrada e a disponibili-dade dos técnicos;<br>
+            e) Nota importante: Clientes com <b>contrato Poweron ativo</b> têm <b>prioridade</b> sobre os restantes pedidos;<br>
+            f) Após execução (presencial ou remota) a intervenção é classificada mediante uma resolução total ou parcial. Esta última <br>com análise de necessidade da sua continuidade.</p>
+            <br>
+    </div>
+</div>
+<br>
+<div align="center">
+    <div align="center" style="width: 85%;background-color:rgba(248, 239, 158, 0.705);border-left: 20px;border-right: 20px;">
+        <h1>Assistência</h1>
+        <p><b>Envie-nos um email para suporte@itpoweron.pt ou ligue-nos para 265 092 387</b>, (Chamada para rede fixa nacional) para fazer<br> um pedido de assistência remota que será direcionado para um dos nossos técnicos que de forma segura acederá ao seu sistema e procederá a reparação da anomalia.</p>
+        <br>
+    </div>
+</div>
+<br><br>
+<p style="margin-left: 45px;margin-right: 45px;">Estendemos o nosso compromisso a todos os elementos que interagem na nossa cadeia de valores. Para isso, aderimos à ACEGE - Associação Cristã de Empresários e Gestores de Empresas, assumindo diversos compromissos com os nossos clientes, fornecedores, colaboradores e restante Sociedade Civil, dos quais destacamos, abaixo, e vos desafiamos a conhecer. </p>
+<br>
+<img style="height: 150px;width: 1100px;margin-left: 125px;" src="fotos/Design sem nome (1).png">
+<br><br><br>
+</body>
+<footer style="background-color: #63C009;">
+    <br>
+    <div align="left" style="display: inline-block;margin-left: 250px;">
+      <p align="center" style="font-size: 30px; color: white;margin: 0;">Contactos:</p> 
+      <p align="center" style="font-size: 20px; color: white;margin: 0;">Email: geral@itpoweron.pt<br>Telefone: (+351) 265 092 387</p>
+    </div>
+    
+    <div align="right" style="display: inline-block;margin-left: 300px;">
+      <p align="center" style="font-size: 30px; color: white;margin: 0;margin-top: 0px;">Morada:</p>
+      <p align="center" style="font-size: 20px; color: white;margin: 0;">Rua Flávio Resende, Nº 1 A<br>2910-495 Setúbal</p>
+    </div>
+    <br><br><br>
+    <div>
+      <p style="font-size: 30px; color: white;margin: 0;" align="center">Soluções:</p>
+      <br>
+      <div align="center">
+      <button class="button3">SAGE</button>&nbsp;&nbsp;<button class="button3">ANTIVIRUS</button>&nbsp;&nbsp;<button class="button3">WATCHGUARD</button>&nbsp;&nbsp;<button class="button3">MSS</button>&nbsp;&nbsp;<button class="button3">REDES</button>&nbsp;&nbsp;<button class="button3">SERVIDORES</button>
+      <style>
+    .button3{font-size: 18px;background-color: #63C009;width: 150px;height: 50px;text-align: center;color: #ffffff;border-radius: 6%;border: 0px;}
+    .button3:hover{background-color:#FFFFFF;color: black;}
+      </style>
+      </div>
+    </div>
+    
+    
+    <br><br><br>
+    <p align="center" style="color: rgb(255, 255, 255); font-size:20px;">2023 © Todos os direitos reservados.</p>
+    <br>
+    <p align="center" style="font-size: 13px;color: white;">Termos e condições&nbsp;&nbsp;&nbsp;Politica de cookies&nbsp;&nbsp;&nbsp;Politica de privacidade&nbsp;&nbsp;&nbsp;Livro de reclamações online</p>
+    <br>
+    </footer>
+    
+    </html>
